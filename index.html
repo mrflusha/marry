@@ -13,9 +13,25 @@
 
 <script>
         var heart = document.getElementById('heart');
+        var happiens = "<div>&#x1f493; 	<br>&#x1f492;</div>"
+        
         
         function love(){
-                alert('I love you');
+            let ask = confirm("do you want to marry me?")
+            alert(ask)
+             if (ask !== true){
+                 alert("I love but i'm understand what this not ... I'll be .... so understand it.... And i don't understand what am i do tham")
+                 heart.insertAdjacentHTML('afterend', "heart")
+                // heart.pop()
+                 
+             }else{
+             
+                        //alert(happiens)
+                        heart.insertAdjacentHTML('afterbegin', happiens)
+                        alert("We will be happiens...")
+             }
+//             
+          //  alert("&#x1f496;",'&#x1f496;');
         }
 
 
